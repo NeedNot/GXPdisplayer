@@ -1,7 +1,6 @@
 import requests
 from api_key import api_key
 
-
 guild = input("ENTER A GUILD NAME:")
 
 gurl = ("https://api.hypixel.net/guild?key=" + api_key + "&name=" + guild)
