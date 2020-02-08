@@ -1,9 +1,15 @@
 import requests
+import os
+from api_key import api_key
 
-g = requests.get('https://api.hypixel.net/guild?key=APIKEY&name=GUILD NAME').json()
 
+guild = input("ENTER A GUILD NAME:")
 
+gurl = ("https://api.hypixel.net/guild?key=" + api_key + "&name=" + guild)
+g = requests.get(gurl)
+g = g.json()
 
+print('------------------------------------------')
 for i in range(len(g['guild']['members'])):
   uuid = g['guild']['members'][i]['uuid']
 
@@ -12,3 +18,5 @@ for i in range(len(g['guild']['members'])):
 
   expHistory = g['guild']['members'][i]['expHistory']
   print(f"{x['name']} Last 7 Days Guild XP {sum(expHistory.values())}\n")
+
+os.system("pause")
