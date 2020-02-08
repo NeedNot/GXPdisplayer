@@ -1,5 +1,4 @@
 import requests
-import os
 from api_key import api_key
 
 
@@ -19,4 +18,4 @@ for i in range(len(g['guild']['members'])):
   expHistory = g['guild']['members'][i]['expHistory']
   print(f"{x['name']} Last 7 Days Guild XP {sum(expHistory.values())}\n")
 
-os.system("pause")
+input()
