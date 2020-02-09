@@ -5,7 +5,7 @@ try:
     with open('API_KEY') as inf:
         api_key = inf.read()
 except FileNotFoundError:
-    api_key = input("Please enter the API key: ")
+    api_key = input("Please enter your API key: ")
     with open('API_KEY', 'w') as outf:
         outf.write(api_key)
 
