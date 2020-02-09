@@ -2,15 +2,24 @@
 Displays hypixel GXP per member! good for finding guild members slacking off or that should be rewarded for their GXP contributions!
 
 **Usage:**
+`Click clone or download and press download zip`
+*note: your browser may say this file is not safe, just press download anyways*
 
-`Download and extract the .zip`
+`extract the .zip file in a empty folder`
+*go onto hypixel and type the command /api new*
+*save the key it gave you, it should look like this “0a000b00-00c0-00d0-0e00-0f000gh00i00”*
 
-`Click on guildxp.exe`
+`open the guildxp.exe`
+*note: it may give a windows protection screen, just press read more and click on run
+anyways*
 
-`If it's your first time using opening the exe it will ask you for an API key`
+a black box will appear asking you for your api key, paste / type in the key you just recieved via the hypixel command
 
-*You get can get an API key by joining mc.hypixel.net and typing /api new*
+Now just type a guild you want to see the exp of and all users will start appearing in the box
+Thats it, now when you are done you just close the window!
 
-`Then it will ask you for a guild name and you simply input the guild name and the computer does the rest!`
 
-***THE MOJANG API HAS A RATE LIMIT OF 600 REQUESTS/10 MIN, IF THE GUILD YOU ARE LOOKING UP HAS 125 MEMBERS YOU WILL ONLY BE ABLE TO LOOK IT UP 4 TIMES IN A 10 MINUTE SPAN!*** *This may be why it's crashing when you input a guild name*
+***(A file will be generated name API_KEY this will hold your key so when you share this program, make sure to remove the API_KEY file)***
+
+***MOJANG HAS AN API RATE LIMIT OF 600 requests/10 min SO IF YOU HAVE A LARG GUILD YOU CAN'T RUN IT MORE THEN $ TIMES IN A !) MIN PIRIOD!
+THIS MAY BE WHY IT WON'T WORK FOR YOU.***
