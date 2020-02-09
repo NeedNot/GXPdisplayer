@@ -2,11 +2,13 @@
 Displays hypixel GXP per member! good for finding guild members slacking off or that should be rewarded for their GXP contributions!
 
 **Usage:**
+
 `Download and extract the .zip`
 
 `Click on guildxp.exe`
 
 `If it's your first time using opening the exe it will ask you for an API key`
+
 *You get can get an API key by joining mc.hypixel.net and typing /api new*
 
 `Then it will ask you for a guild name and you simply input the guild name and the computer does the rest!`
