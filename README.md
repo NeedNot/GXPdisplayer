@@ -21,5 +21,5 @@ Thats it, now when you are done you just close the window!
 
 ***(A file will be generated named API_KEY this will hold your key so if you share this program, make sure to remove the API_KEY file)***
 
-***MOJANG HAS AN API RATE LIMIT OF 600 requests/10 min SO IF YOU HAVE A LARGE GUILD YOU CAN'T RUN IT MORE THEN 4 TIMES IN A 10 MIN PIRIOD!
+***MOJANG HAS AN API RATE LIMIT OF 600 requests/10 min SO IF YOU HAVE A LARGE GUILD YOU CAN'T RUN IT MORE THEN 4 TIMES IN A 10 MIN PERIOD!
 THIS MAY BE WHY IT WON'T WORK FOR YOU.***
