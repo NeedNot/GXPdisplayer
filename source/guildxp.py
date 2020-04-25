@@ -11,7 +11,7 @@ except FileNotFoundError:
     with open('API_KEY', 'w') as outf:
         outf.write(api_key)
 
-time.sleep(3)
+time.sleep(1)
 guild = input("ENTER A GUILD NAME: ")
 
 g = requests.get("https://api.hypixel.net/guild?key=" + api_key + "&name=" + guild)
