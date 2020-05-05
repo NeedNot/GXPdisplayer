@@ -1,5 +1,7 @@
 import requests
 import time
+from colorama import init
+from termcolor import colored
 
 try:
     with open('API_KEY') as inf:
@@ -9,11 +11,10 @@ except FileNotFoundError:
     with open('API_KEY', 'w') as outf:
         outf.write(api_key)
 
-time.sleep(3)
+time.sleep(1)
 guild = input("ENTER A GUILD NAME: ")
 
-gurl = ("https://api.hypixel.net/guild?key=" + api_key + "&name=" + guild)
-g = requests.get(gurl)
+g = requests.get("https://api.hypixel.net/guild?key=" + api_key + "&name=" + guild)
 g = g.json()
 
 print('------------------------------------------')
@@ -22,9 +23,28 @@ for i in range(len(g['guild']['members'])):
 
   x = requests.get("https://sessionserver.mojang.com/session/minecraft/profile/" + uuid)
   x = x.json()
+  name = x['name']
 
-  expHistory = g['guild']['members'][i]['expHistory']
-  print(f"{x['name']} Has gained {sum(expHistory.values())} GEXP in the last 7 days\n")
+  for names in name:
+    name = (f"{name: <16}")
+  expHistory = expHistory = g['guild']['members'][i]['expHistory']
+  expHistory = sum(expHistory.values())
+  init()
+
+  if (int(expHistory) >= 0):
+    color = 'red'
+  if (int(expHistory) >= 10000):
+    color = 'yellow'
+  if (int(expHistory) >= 100000):
+    color = 'green'
+  if (int(expHistory) >= 200000):
+    color = 'cyan'
+
+  name = colored(name, color)
+  expHistory = "{:,}".format(sum(g['guild']['members'][i]['expHistory'].values()))
+  expHistory = colored(expHistory, color)
+
+  print(f"{name} Has gained {expHistory} GEXP in the last 7 days\n")
 
 
 input()
