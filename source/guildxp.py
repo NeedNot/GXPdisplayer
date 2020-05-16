@@ -3,6 +3,7 @@ import time
 from colorama import init
 from termcolor import colored
 
+
 try:
     with open('API_KEY') as inf:
         api_key = inf.read()
@@ -21,9 +22,9 @@ print('------------------------------------------')
 for i in range(len(g['guild']['members'])):
   uuid = g['guild']['members'][i]['uuid']
 
-  x = requests.get("https://sessionserver.mojang.com/session/minecraft/profile/" + uuid)
+  x = requests.get("https://playerdb.co/api/player/minecraft/" + uuid)
   x = x.json()
-  name = x['name']
+  name = x['data']['player']['meta']['name_history'][0]['name']
 
   for names in name:
     name = (f"{name: <16}")
