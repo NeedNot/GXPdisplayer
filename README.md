@@ -1,5 +1,6 @@
-# GXPdisplayer V1.0
+# GXPdisplayer V1.2
 Displays hypixel GXP per member! Good for finding guild members slacking off or that should be rewarded for their GXP contributions!
+Now with an option to write to spreadsheet!!
 
 **Usage:**
 `Click clone or download and press download zip`
