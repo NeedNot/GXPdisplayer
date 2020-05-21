@@ -24,7 +24,8 @@ for i in range(len(g['guild']['members'])):
 
   x = requests.get("https://playerdb.co/api/player/minecraft/" + uuid)
   x = x.json()
-  name = x['data']['player']['meta']['name_history'][0]['name']
+  name = x['data']['player']['username']
+
 
   for names in name:
     name = (f"{name: <16}")
