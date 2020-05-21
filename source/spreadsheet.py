@@ -53,7 +53,8 @@ for i in tqdm(range(len(g['guild']['members'])), desc="Progress"):
 
   x = requests.get("https://playerdb.co/api/player/minecraft/" + uuid)
   x = x.json()
-  name = x['data']['player']['meta']['name_history'][0]['name']
+  name = x['data']['player']['username']
+  
 
   player_rank = g['guild']['members'][i]['rank']
   name_slot = 1 + name_slot
